@@ -1,0 +1,66 @@
+-------------------------------------------------------------------------------
+Test set: helloindividualpages.HelloIndividualPagesTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 14.903 s <<< FAILURE! - in helloindividualpages.HelloIndividualPagesTest
+addItemAndVisitPage(helloindividualpages.HelloIndividualPagesTest)  Time elapsed: 0.311 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+ <"<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head/>
+  <body>
+    <h1>
+      Whitelabel Error Page
+    </h1>
+    <p>
+      This application has no explicit mapping for /error, so you are seeing this as a fallback.
+    </p>
+    <div id="created">
+      Wed Nov 17 14:26:13 EET 2021
+    </div>
+    <div>
+      There was an unexpected error (type=Not Found, status=404).
+    </div>
+    <div>
+      No message available
+    </div>
+  </body>
+</html>
+">
+to contain:
+ <"NAME: 5e232d93-6ce9-418c-92e7-9580eda5f998"> 
+	at helloindividualpages.HelloIndividualPagesTest.lambda$addItemAndVisitPage$2(HelloIndividualPagesTest.java:47)
+	at helloindividualpages.HelloIndividualPagesTest.addItemAndVisitPage(HelloIndividualPagesTest.java:43)
+
+addMultipleItemsAndVisitEachPage(helloindividualpages.HelloIndividualPagesTest)  Time elapsed: 0.253 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+ <"<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head/>
+  <body>
+    <h1>
+      Whitelabel Error Page
+    </h1>
+    <p>
+      This application has no explicit mapping for /error, so you are seeing this as a fallback.
+    </p>
+    <div id="created">
+      Wed Nov 17 14:26:13 EET 2021
+    </div>
+    <div>
+      There was an unexpected error (type=Not Found, status=404).
+    </div>
+    <div>
+      No message available
+    </div>
+  </body>
+</html>
+">
+to contain:
+ <"NAME: 6c1ee286-1f33-4ed3-9cca-5b6452c2a6b8"> 
+	at helloindividualpages.HelloIndividualPagesTest.lambda$addMultipleItemsAndVisitEachPage$4(HelloIndividualPagesTest.java:60)
+	at helloindividualpages.HelloIndividualPagesTest.addMultipleItemsAndVisitEachPage(HelloIndividualPagesTest.java:56)
+
